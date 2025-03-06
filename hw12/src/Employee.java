@@ -12,4 +12,15 @@ public class Employee {
         this.position = position;
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return "Співробітник {" +
+                "Ім'я= '" + name + '\'' +
+                ", пошта='" + email + '\'' +
+                ", телефон='" + phone + '\'' +
+                ", посада='" + position + '\'' +
+                ", вік=" + age +
+                '}';
+    }
 }

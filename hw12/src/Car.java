@@ -1,13 +1,19 @@
 public class Car {
-    public void Start() {
+    public static void Start() {
         startElectricity();
         startCommand();
         startFuelSystem();
     }
-    private void startElectricity(){
+
+    //Трішки доповнив внутрішні методи, щоб перевіряти роботу.
+
+    private static void startElectricity(){
+        System.out.println("Вмикається електроніка.");
     }
-    private void startCommand(){
+    private static void startCommand(){
+        System.out.println("Очикується команда.");
     }
-    private void startFuelSystem(){
+    private static void startFuelSystem(){
+        System.out.println("Вмикається система контролю палива.");
     }
 }
